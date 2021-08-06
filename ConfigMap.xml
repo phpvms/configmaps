@@ -19,7 +19,7 @@ https://docs.phpvms.net/acars/configmaps
         <Key Type="Boolean" Key="LIGHT LANDING ON" />
       </LandingLights>
       <NavigationLights>
-        <Key Type="Mask" Key="LIGHT NAV ON" />
+        <Key Type="Boolean" Key="LIGHT NAV ON" />
       </NavigationLights>
       <StrobeLights>
         <Key Type="Boolean" Key="LIGHT STROBE ON" />
