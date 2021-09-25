@@ -15,11 +15,11 @@ Contributed by Amir <https://github.com/amir-golmohammadi>
       <Key Type="Int" Key="B742/ext_light/landing_outbd_L_sw" Value="1"/>
       <Key Type="Int" Key="B742/ext_light/landing_outbd_R_sw" Value="1"/>
     </LandingLights>
-	<TaxiLight>
+    <TaxiLight>
       <Key Type="Int" Key="B742/ext_light/runway_turnoff_L_sw" Value="1"/>
-	  <Key Type="Int" Key="B742/ext_light/runway_turnoff_R_sw" Value="1"/>
+      <Key Type="Int" Key="B742/ext_light/runway_turnoff_R_sw" Value="1"/>
     </TaxiLight>
-	<WingLight>
+    <WingLight>
       <Key Type="Int" Key="B742/ext_light/wing_sw" Value="1"/>
     </WingLight>
     <LogoLight>
