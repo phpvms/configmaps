@@ -10,7 +10,7 @@
     <Flap Index="5" Text="28" />
     <Flap Index="6" Text="40" />
   </Aircraft>
-  <Aircraft ICAO="B722">
+  <Aircraft ICAO="B72*">
     <Flap Index="0" Text="UP" />
     <Flap Index="1" Text="2" />
     <Flap Index="2" Text="5" />
