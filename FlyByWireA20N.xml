@@ -9,7 +9,7 @@ Contributed by B.Fatih KOZ <https://github.com/FatihKoz>
 -->
 <!--
   Only Flaps are defined.
-  Lights will be Ignore until a stable solution/variable can be found.
+  Lights will be ignored until a stable solution/variable can be found.
 -->
 <Rules>
   <Rule Simulator="Microsoft Flight" TitleContains="A320 Neo FlyByWire">

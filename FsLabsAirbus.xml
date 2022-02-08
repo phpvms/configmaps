@@ -7,7 +7,7 @@ https://docs.phpvms.net/acars/configmaps
 
 Contributed by B.Fatih KOZ <https://github.com/FatihKoz>
 
-By default all lights are Ignore for FsLabs Airbus Series due to
+By default all lights are ignored for FsLabs Airbus Series due to
 their usage of SimConnect Lvars instead of FsUipc offsets.
 
 Also CONF CHG indexes added to cover flap/slat movements they report
