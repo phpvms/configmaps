@@ -7,7 +7,7 @@ https://docs.phpvms.net/acars/configmaps
 
 Contributed by B.Fatih KOZ <https://github.com/FatihKoz>
 
-By default all lights are ignored for FsLabs Airbus Series due to
+By default all lights are Ignore for FsLabs Airbus Series due to
 their usage of SimConnect Lvars instead of FsUipc offsets.
 
 Also CONF CHG indexes added to cover flap/slat movements they report
@@ -15,11 +15,11 @@ as flap positions.
 -->
 <Rules>
   <Rule Simulator="Prepar3d" TitleContains="FSLabs">
-    <NavigationLights Ignored="True" />
-    <BeaconLights Ignored="True" />
-    <TaxiLight Ignored="True" />
-    <StrobeLights Ignored="True" />
-    <LandingLights Ignored="True" />
+    <NavigationLights Ignore="True" />
+    <BeaconLights Ignore="True" />
+    <TaxiLight Ignore="True" />
+    <StrobeLights Ignore="True" />
+    <LandingLights Ignore="True" />
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF CHG" />
@@ -34,11 +34,11 @@ as flap positions.
     </Flaps>
   </Rule>
   <Rule Simulator="FSX" TitleContains="FSLabs">
-    <NavigationLights Ignored="True" />
-    <BeaconLights Ignored="True" />
-    <TaxiLight Ignored="True" />
-    <StrobeLights Ignored="True" />
-    <LandingLights Ignored="True" />
+    <NavigationLights Ignore="True" />
+    <BeaconLights Ignore="True" />
+    <TaxiLight Ignore="True" />
+    <StrobeLights Ignore="True" />
+    <LandingLights Ignore="True" />
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF CHG" />

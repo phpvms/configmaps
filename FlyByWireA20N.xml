@@ -9,15 +9,15 @@ Contributed by B.Fatih KOZ <https://github.com/FatihKoz>
 -->
 <!--
   Only Flaps are defined.
-  Lights will be ignored until a stable solution/variable can be found.
+  Lights will be Ignore until a stable solution/variable can be found.
 -->
 <Rules>
   <Rule Simulator="Microsoft Flight" TitleContains="A320 Neo FlyByWire">
-    <NavigationLights Ignored="True" />
-    <BeaconLights Ignored="True" />
-    <TaxiLight Ignored="True" />
-    <StrobeLights Ignored="True" />
-    <LandingLights Ignored="True" />
+    <NavigationLights Ignore="True" />
+    <BeaconLights Ignore="True" />
+    <TaxiLight Ignore="True" />
+    <StrobeLights Ignore="True" />
+    <LandingLights Ignore="True" />
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF 1" />
