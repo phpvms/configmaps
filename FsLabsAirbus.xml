@@ -22,10 +22,10 @@ as flap positions.
     <LandingLights Ignored="True" />
     <Flaps>
       <Flap Index="0" Text="UP" />
-      <Flap Index="1" Text="CONF CHG" />
-      <Flap Index="2" Text="CONF CHG" />
-      <Flap Index="3" Text="CONF CHG" />
-      <Flap Index="4" Text="CONF CHG" />
+      <Flap Index="1" Ignored="True" Text="CONF CHG" />
+      <Flap Index="2" Ignored="True" Text="CONF CHG" />
+      <Flap Index="3" Ignored="True" Text="CONF CHG" />
+      <Flap Index="4" Ignored="True" Text="CONF CHG" />
       <Flap Index="5" Text="CONF 1" />
       <Flap Index="6" Text="CONF 1+F" />
       <Flap Index="7" Text="CONF 2" />
@@ -41,10 +41,10 @@ as flap positions.
     <LandingLights Ignored="True" />
     <Flaps>
       <Flap Index="0" Text="UP" />
-      <Flap Index="1" Text="CONF CHG" />
-      <Flap Index="2" Text="CONF CHG" />
-      <Flap Index="3" Text="CONF CHG" />
-      <Flap Index="4" Text="CONF CHG" />
+      <Flap Index="1" Ignored="True" Text="CONF CHG" />
+      <Flap Index="2" Ignored="True" Text="CONF CHG" />
+      <Flap Index="3" Ignored="True" Text="CONF CHG" />
+      <Flap Index="4" Ignored="True" Text="CONF CHG" />
       <Flap Index="5" Text="CONF 1" />
       <Flap Index="6" Text="CONF 1+F" />
       <Flap Index="7" Text="CONF 2" />
