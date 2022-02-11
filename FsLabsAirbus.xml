@@ -23,10 +23,10 @@ as flap positions.
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF 1" />
-      <Flap Index="2" Ignored="True" Text="CONF CHG" />
-      <Flap Index="3" Ignored="True" Text="CONF CHG" />
-      <Flap Index="4" Ignored="True" Text="CONF CHG" />
-      <Flap Index="5" Ignored="True" Text="CONF CHG" />
+      <Flap Index="2" Ignore="True" Text="CONF CHG" />
+      <Flap Index="3" Ignore="True" Text="CONF CHG" />
+      <Flap Index="4" Ignore="True" Text="CONF CHG" />
+      <Flap Index="5" Ignore="True" Text="CONF CHG" />
       <Flap Index="6" Text="CONF 1+F" />
       <Flap Index="7" Text="CONF 2" />
       <Flap Index="8" Text="CONF 3" />
@@ -42,10 +42,10 @@ as flap positions.
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF 1" />
-      <Flap Index="2" Ignored="True" Text="CONF CHG" />
-      <Flap Index="3" Ignored="True" Text="CONF CHG" />
-      <Flap Index="4" Ignored="True" Text="CONF CHG" />
-      <Flap Index="5" Ignored="True" Text="CONF CHG" />
+      <Flap Index="2" Ignore="True" Text="CONF CHG" />
+      <Flap Index="3" Ignore="True" Text="CONF CHG" />
+      <Flap Index="4" Ignore="True" Text="CONF CHG" />
+      <Flap Index="5" Ignore="True" Text="CONF CHG" />
       <Flap Index="6" Text="CONF 1+F" />
       <Flap Index="7" Text="CONF 2" />
       <Flap Index="8" Text="CONF 3" />
