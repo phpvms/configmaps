@@ -10,6 +10,9 @@ https://docs.phpvms.net/acars/configmaps
   at the aircraft title (0x3D00) and looks for all of the given values (space separated)
   to ensure that they're all present
   -->
+<!--
+  B737 Extendable Landing Lights <Key Type="Byte" Key="0x64F4" Value="2"/>
+  -->
 <Rules>
 
   <!--
@@ -20,7 +23,6 @@ https://docs.phpvms.net/acars/configmaps
       <Key Type="Byte" Key="0x6501" Value="1"/>
     </BeaconLights>
     <LandingLights>
-      <Key Type="Byte" Key="0x64F4" Value="2"/>
       <Key Type="Byte" Key="0x64F6" Value="1"/>
     </LandingLights>
     <NavigationLights>
@@ -76,7 +78,6 @@ https://docs.phpvms.net/acars/configmaps
       <Key Type="Byte" Key="0x6501" Value="1"/>
     </BeaconLights>
     <LandingLights>
-      <Key Type="Byte" Key="0x64F4" Value="2"/>
       <Key Type="Byte" Key="0x64F6" Value="1"/>
     </LandingLights>
     <NavigationLights>
@@ -132,7 +133,6 @@ https://docs.phpvms.net/acars/configmaps
       <Key Type="Byte" Key="0x6501" Value="1"/>
     </BeaconLights>
     <LandingLights>
-      <Key Type="Byte" Key="0x64F4" Value="2"/>
       <Key Type="Byte" Key="0x64F6" Value="1"/>
     </LandingLights>
     <NavigationLights>
