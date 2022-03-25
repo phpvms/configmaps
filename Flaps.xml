@@ -179,6 +179,14 @@
     <Flap Index="4" Text="FULL" />
   </Aircraft>
   <!-- McDonnell Douglas Group -->
+  <Aircraft ICAO="MD11">
+    <Flap Index="0" Text="UP" />
+    <Flap Index="1" Text="0" />
+    <Flap Index="2" Text="DIAL TO" />
+    <Flap Index="3" Text="28" />
+    <Flap Index="4" Text="35" />
+    <Flap Index="5" Text="50" />
+  </Aircraft>
   <Aircraft ICAO="MD8*">
     <Flap Index="0" Text="UP" />
     <Flap Index="1" Text="0" />
