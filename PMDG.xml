@@ -8,16 +8,20 @@ https://docs.phpvms.net/acars/configmaps
 <!--
   These rules are specific for a given aircraft. The TitleContains field looks
   at the aircraft title (0x3D00) and looks for all of the given values (space separated)
-  to ensure that they're all present
-  -->
-<!--
+  to ensure that they're all present.
+
   B737 Extendable Landing Lights <Key Type="Byte" Key="0x64F4" Value="2"/>
   -->
 <Rules>
-
-  <!--
-  Rules for Prepar3d
-  -->
+  <!-- Rules for MSFS -->
+  <Rule Simulator="Microsoft Flight" TitleContains="PMDG 737">
+    <NavigationLights Ignore="True" />
+    <BeaconLights Ignore="True" />
+    <TaxiLight Ignore="True" />
+    <StrobeLights Ignore="True" />
+    <LandingLights Ignore="True" />
+  </Rule>
+  <!-- Rules for Prepar3d -->
   <Rule Simulator="Prepar3d" TitleContains="PMDG 737">
     <BeaconLights>
       <Key Type="Byte" Key="0x6501" Value="1"/>
@@ -69,10 +73,7 @@ https://docs.phpvms.net/acars/configmaps
       <Key Type="Byte" Key="0x648E" Value="1"/>
     </TaxiLight>
   </Rule>
-
-  <!--
-  Rules for FSX
-  -->
+  <!-- Rules for FSX -->
   <Rule Simulator="FSX" TitleContains="PMDG 737">
     <BeaconLights>
       <Key Type="Byte" Key="0x6501" Value="1"/>
@@ -124,10 +125,7 @@ https://docs.phpvms.net/acars/configmaps
       <Key Type="Byte" Key="0x648E" Value="1"/>
     </TaxiLight>
   </Rule>
-
-  <!--
-  Rules for FS9
-  -->
+  <!-- Rules for FS9 -->
   <Rule Simulator="FS9" TitleContains="PMDG 737">
     <BeaconLights>
       <Key Type="Byte" Key="0x6501" Value="1"/>
