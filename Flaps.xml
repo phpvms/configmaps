@@ -31,6 +31,17 @@
     <Flap Index="7" Text="30" />
     <Flap Index="8" Text="40" />
   </Aircraft>
+  <Aircraft ICAO="B3*M">
+    <Flap Index="0" Text="UP" />
+    <Flap Index="1" Text="1" />
+    <Flap Index="2" Text="2" />
+    <Flap Index="3" Text="5" />
+    <Flap Index="4" Text="10" />
+    <Flap Index="5" Text="15" />
+    <Flap Index="6" Text="25" />
+    <Flap Index="7" Text="30" />
+    <Flap Index="8" Text="40" />
+  </Aircraft>
   <Aircraft ICAO="B74*">
     <Flap Index="0" Text="UP" />
     <Flap Index="1" Text="1" />
