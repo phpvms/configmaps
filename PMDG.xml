@@ -36,7 +36,7 @@
       <Key Type="LVar" Key="switch_125_73X" Value="100"/>
     </WingLight>
     <LogoLight>
-      <Key Type="LVar" Key="switch_122_73X" Value="100">
+      <Key Type="LVar" Key="switch_122_73X" Value="100"/>
     </LogoLight>
   </Rule>
   <!-- Rules for Prepar3d -->
