@@ -17,20 +17,20 @@
   <!-- Rules for MSFS -->
   <Rule Simulator="Microsoft Flight" TitleContains="PMDG 737">
     <NavigationLights>
-      <Key Type="LVar" Key="switch_123_73X" Value="0|100">
+      <Key Type="LVar" Key="switch_123_73X" Value="0|100"/>
     </NavigationLights>
     <BeaconLights>
-      <Key Type="LVar" Key="switch_124_73X" Value="100">
+      <Key Type="LVar" Key="switch_124_73X" Value="100"/>
     </BeaconLights>
     <TaxiLight>
-      <Key Type="LVar" Key="switch_117_73X" Value="100">
+      <Key Type="LVar" Key="switch_117_73X" Value="100"/>
     </TaxiLight>
     <StrobeLights>
-      <Key Type="LVar" Key="switch_123_73X" Value="0">
+      <Key Type="LVar" Key="switch_123_73X" Value="0"/>
     </StrobeLights>
     <LandingLights>
-      <Key Type="LVar" Key="switch_113_73X" Value="100">
-      <Key Type="LVar" Key="switch_114_73X" Value="100">
+      <Key Type="LVar" Key="switch_113_73X" Value="100"/>
+      <Key Type="LVar" Key="switch_114_73X" Value="100"/>
     </LandingLights>
     <WingLight>
       <Key Type="LVar" Key="switch_125_73X" Value="100"/>
