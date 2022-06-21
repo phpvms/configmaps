@@ -11,6 +11,13 @@ By default all lights are ignored for ProSim aircraft due to
 usage of customizable FsUipc offsets with home cockpit solutions.
 -->
 <Rules>
+  <Rule Simulator="Microsoft Flight" TitleContains="Prosim">
+    <NavigationLights Ignore="True" />
+    <BeaconLights Ignore="True" />
+    <TaxiLight Ignore="True" />
+    <StrobeLights Ignore="True" />
+    <LandingLights Ignore="True" />
+  </Rule>
   <Rule Simulator="Prepar3d" TitleContains="Prosim">
     <NavigationLights Ignore="True" />
     <BeaconLights Ignore="True" />
