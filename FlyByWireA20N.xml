@@ -7,11 +7,25 @@ https://docs.phpvms.net/acars/configmaps
 
 Contributed by B.Fatih KOZ <https://github.com/FatihKoz>
 
-Only Flaps are defined.
-Light checks will use default variables 'cause current FBW releases support them.
+Lights are copied from default configmap for test purposes
 -->
 <Rules>
   <Rule Simulator="Microsoft Flight" TitleContains="A320 Neo FlyByWire">
+    <NavigationLights>
+      <Key Type="Boolean" Key="LIGHT NAV ON" />
+    </NavigationLights>
+    <BeaconLights>
+      <Key Type="Boolean" Key="LIGHT BEACON ON" />
+    </BeaconLights>
+    <TaxiLight>
+      <Key Type="Boolean" Key="LIGHT TAXI ON" />
+    </TaxiLight>
+    <StrobeLights>
+      <Key Type="Boolean" Key="LIGHT STROBE ON" />
+    </StrobeLights>
+    <LandingLights>
+      <Key Type="Boolean" Key="LIGHT LANDING ON" />
+    </LandingLights>
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF 1" />
