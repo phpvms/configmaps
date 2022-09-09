@@ -6,18 +6,26 @@ Instead, create your own. See the docs:
 https://docs.phpvms.net/acars/configmaps
 
 Contributed by B.Fatih KOZ <https://github.com/FatihKoz>
--->
-<!--
-  Only Flaps are defined.
-  Lights will be ignored until a stable solution/variable can be found.
+
+Lights are copied from default configmap for test purposes
 -->
 <Rules>
   <Rule Simulator="Microsoft Flight" TitleContains="A320 Neo FlyByWire">
-    <NavigationLights Ignore="True" />
-    <BeaconLights Ignore="True" />
-    <TaxiLight Ignore="True" />
-    <StrobeLights Ignore="True" />
-    <LandingLights Ignore="True" />
+    <NavigationLights>
+      <Key Type="Boolean" Key="LIGHT NAV ON" />
+    </NavigationLights>
+    <BeaconLights>
+      <Key Type="Boolean" Key="LIGHT BEACON ON" />
+    </BeaconLights>
+    <TaxiLight>
+      <Key Type="Boolean" Key="LIGHT TAXI ON" />
+    </TaxiLight>
+    <StrobeLights>
+      <Key Type="Boolean" Key="LIGHT STROBE ON" />
+    </StrobeLights>
+    <LandingLights>
+      <Key Type="Boolean" Key="LIGHT LANDING ON" />
+    </LandingLights>
     <Flaps>
       <Flap Index="0" Text="UP" />
       <Flap Index="1" Text="CONF 1" />
