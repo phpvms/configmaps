@@ -34,7 +34,7 @@ jobs:
           type: 'zip'
           filename: 'configmaps.zip'
           directory: ./artifacts
-          path: ${{ GITHUB_WORKSPACE }}
+          path: ${{ env.GITHUB_WORKSPACE }}
           exclusions: '*.git* /*node_modules/* .editorconfig'
       
       # - name: Upload to S3
