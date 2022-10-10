@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Create Artifacts Directory
+        run: mkdir -p artifacts
 
       - name: Archive Release
         uses: thedoctor0/zip-release@main
