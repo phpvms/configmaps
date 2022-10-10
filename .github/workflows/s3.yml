@@ -33,7 +33,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'configmaps.zip'
-          directory: ./artifacts
+          directory: artifacts
           path: ../
           exclusions: '*.git* /*node_modules/* .editorconfig /artifacts'
       
