@@ -52,7 +52,7 @@ jobs:
       #     SOURCE_DIR: artifacts
       #     DEST_DIR: release
       # - uses: actions/checkout@master
-      - uses: shallwefootball/s3-upload-action@master
+      - uses: shallwefootball/s3-upload-action@v1.1.3
         with:
           aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
