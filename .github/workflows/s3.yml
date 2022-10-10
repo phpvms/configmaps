@@ -33,8 +33,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'configmaps.zip'
-          path: artifacts
-          directory: .
+          directory: ./artifacts
           exclusions: '*.git* /*node_modules/* .editorconfig'
       
       # - name: Upload to S3
@@ -50,7 +49,7 @@ jobs:
       #     DEST_DIR: release
       # - uses: actions/checkout@master
 
-      - name: Create Artifacts Directory
+      - name: List artifacts
         run: ls -al artifacts/
 
       - uses: shallwefootball/s3-upload-action@v1.1.3
