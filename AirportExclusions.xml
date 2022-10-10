@@ -5,9 +5,9 @@ Usually are "phantom" airports that are included by developers
 -->
 <AirportExclusions>
 	<Airport ICAO="ZHAM" />
-
-	<!-- These seem to be added by MSFS -->
 	<Airport ICAO="LOG*" />
+	<!-- These seem to be added by MSFS -->
 	<Airport ICAO="VOLC1" />
 	<Airport ICAO="VOLC2" />
+	<Airport ICAO="UG27" />
 </AirportExclusions>
