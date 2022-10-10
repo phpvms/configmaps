@@ -28,9 +28,6 @@ jobs:
       - name: Create Artifacts Directory
         run: mkdir -p artifacts
 
-      - name: Create Artifacts Directory
-        run: mkdir -p artifacts
-
       - name: Archive Release
         uses: thedoctor0/zip-release@main
         with:
@@ -52,6 +49,10 @@ jobs:
       #     SOURCE_DIR: artifacts
       #     DEST_DIR: release
       # - uses: actions/checkout@master
+
+      - name: Create Artifacts Directory
+        run: ls -al artifacts/
+
       - uses: shallwefootball/s3-upload-action@v1.1.3
         with:
           aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
