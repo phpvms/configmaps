@@ -63,4 +63,4 @@ jobs:
       - name: Copy files to the test website with the AWS CLI
         run: |
           cd artifacts
-          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/releases
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/release
