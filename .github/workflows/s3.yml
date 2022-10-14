@@ -28,19 +28,11 @@ jobs:
             echo "RELEASE_TYPE=beta" >> $GITHUB_ENV
           fi
 
-      - name: Archive Release
-        uses: thedoctor0/zip-release@main
-        with:
-          type: tar
-          filename: config.tar.gz
-          directory: .
-          path: .
-          exclusions: '*.git* config.tar.gz'
-
-      - name: Create Artifacts Directory
+      - name: Create tar file
         run: |
+          tar -czf --exclude-vcs /tmp/config.tar.gz .
           mkdir -p artifacts
-          mv config.tar.gz artifacts/
+          mv /tmp/config.tar.gz artifacts/
 
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
