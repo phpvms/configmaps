@@ -35,7 +35,7 @@ jobs:
           filename: config.tar.gz
           directory: .
           path: .
-          exclusions: '*.git*'
+          exclusions: '*.git* config.tar.gz'
 
       - name: Create Artifacts Directory
         run: |
