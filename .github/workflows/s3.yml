@@ -31,7 +31,7 @@ jobs:
       - name: Create tar file
         run: |
           mkdir -p /tmp
-          tar -czf --exclude-vcs /tmp/config.tar.gz .
+          tar -czf /tmp/config.tar.gz --exclude-vcs .
           mkdir -p artifacts
           mv /tmp/config.tar.gz artifacts/
 
