@@ -29,9 +29,9 @@ jobs:
         with:
           type: tar
           filename: config.tar.gz
-          directory: artifacts
-          path: ../
-          exclusions: '*.git* /*node_modules/* .editorconfig /artifacts'
+          directory: .
+          path: .
+          exclusions: '*.git* /*node_modules/* .editorconfig artifacts'
 
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
