@@ -4,26 +4,35 @@ on:
   push:
     branches: 
       - main
+      - dev
 
-  workflow_dispatch:
+env:
+  RELEASE_TYPE: release
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
+      - name: Set the release folder
+        run: |
+          if [[ "${{github.base_ref}}" == "dev" || "${{github.ref}}" == "refs/heads/dev" ]]; then
+            echo "RELEASE_TYPE=beta" >> $GITHUB_ENV
+          fi
+
       - name: Create Artifacts Directory
         run: mkdir -p artifacts
 
       - name: Archive Release
         uses: thedoctor0/zip-release@main
         with:
-          type: 'zip'
-          filename: 'configmaps.zip'
+          type: tar
+          filename: config.tar.gz
           directory: artifacts
           path: ../
           exclusions: '*.git* /*node_modules/* .editorconfig /artifacts'
+
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -34,4 +43,4 @@ jobs:
       - name: Copy files to the test website with the AWS CLI
         run: |
           cd artifacts
-          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/release
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/$RELEASE_TYPE
