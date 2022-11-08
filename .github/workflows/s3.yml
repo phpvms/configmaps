@@ -4,26 +4,30 @@ on:
   push:
     branches: 
       - main
+      - dev
 
-  workflow_dispatch:
+env:
+  RELEASE_TYPE: release
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: 'Cleanup build folder'
+        run: |
+          ls -la ./
+          rm -rf ./* || true
+          rm -rf ./.??* || true
+          ls -la ./
       
-      - name: Create Artifacts Directory
-        run: mkdir -p artifacts
+      - uses: actions/checkout@v3
 
-      - name: Archive Release
-        uses: thedoctor0/zip-release@main
-        with:
-          type: 'zip'
-          filename: 'configmaps.zip'
-          directory: artifacts
-          path: ../
-          exclusions: '*.git* /*node_modules/* .editorconfig /artifacts'
+      - name: Set the release folder
+        run: |
+          if [[ "${{github.base_ref}}" == "dev" || "${{github.ref}}" == "refs/heads/dev" ]]; then
+            echo "RELEASE_TYPE=beta" >> $GITHUB_ENV
+          fi
+
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -31,7 +35,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - name: Copy files to the test website with the AWS CLI
+      - name: Create tar and upload
         run: |
+          mkdir -p /tmp
+          tar -czf /tmp/config.tar.gz --exclude-vcs --exclude='./.github' .
+          mkdir -p artifacts
+          mv /tmp/config.tar.gz artifacts/
           cd artifacts
-          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/release
+          aws s3 sync --acl public-read . s3://${{ secrets.AWS_S3_BUCKET }}/$RELEASE_TYPE
